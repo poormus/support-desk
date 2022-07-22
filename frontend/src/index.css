@@ -113,10 +113,14 @@ h3 {
 .form {
   width: 70%;
   margin: 0 auto;
+  
 }
 
 .form-group {
   margin-bottom: 10px;
+}
+.form-group-margin {
+  padding-bottom: 10px;
 }
 
 .form-group input,

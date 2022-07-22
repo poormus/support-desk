@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Toast from './components/Toast';
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import Header from './components/Header';
 import Home from "./pages/Home"
@@ -18,8 +18,8 @@ function App() {
         <Route path='/login' element={<Login/>}/>
       </Routes>
       </div>
-      
     </Router>
+    <Toast/>
     </>
       
   );
