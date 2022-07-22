@@ -7,7 +7,7 @@
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
-    "dev":"concurrently \"npm run server\" \"npm run client\"  "
+    "dev": "concurrently \"npm run server\" \"npm run client\"  "
   },
   "author": "Mustafa",
   "license": "MIT",
@@ -19,7 +19,8 @@
     "express": "^4.18.1",
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.4.5"
+    "mongoose": "^6.4.5",
+    "react-spinners": "^0.13.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"

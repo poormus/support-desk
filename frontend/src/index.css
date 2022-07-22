@@ -408,3 +408,15 @@ footer {
     font-size: 1.5rem;
   }
 }
+
+.spinner{
+  border-bottom: 1px solid #e6e6e6;
+  height: 100mv;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.padding{
+  padding-bottom: 30px;
+}
