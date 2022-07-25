@@ -214,6 +214,7 @@ h3 {
 
 .ticket,
 .ticket-headings {
+  border-radius: 5px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -226,6 +227,35 @@ h3 {
   text-align: center;
 }
 
+.delete-ticket-icon{
+  color: red;
+  cursor: pointer;
+  position:absolute;
+    bottom: 8px;
+    right:8px;    
+}
+
+.edit-ticket-icon{
+  color: green;
+  cursor: pointer;
+  position:absolute;
+    bottom: 8px;
+    right: 4rem;;    
+}
+
+.ticket-outer{
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  gap: 20px;
+  display: block;
+  background: #f4f4f4;
+  position: relative;
+}
+
+.tickets{
+  padding-bottom: 10px;
+}
 .ticket-headings {
   font-weight: 700;
 }
@@ -269,6 +299,7 @@ h3 {
   align-items: center;
   justify-content: space-between;
 }
+
 
 .ticket-page .btn {
   margin-bottom: 30px;
@@ -410,8 +441,7 @@ footer {
 }
 
 .spinner{
-  border-bottom: 1px solid #e6e6e6;
-  height: 100mv;
+  
   justify-content: center;
   align-items: center;
   display: flex;
@@ -420,3 +450,14 @@ footer {
 .padding{
   padding-bottom: 30px;
 }
+
+.outer {
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
