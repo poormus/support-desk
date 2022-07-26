@@ -9,6 +9,7 @@ const Ticket=require('../models/TicketModel')
 const getTickets=asyncHandler( async (req,res)=>{
     //Get user by id
     const user= await User.findById(req.user.id)
+    console.log(`user is ${user}`)
     if(!user){
         res.status(401)
         throw new Error('User not found')
