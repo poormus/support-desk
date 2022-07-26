@@ -22,7 +22,7 @@ app.use('/api/users',require('./routes/UserRoutes'))
 app.use('/api/tickets',require('./routes/TicketRoutes'))
 
 // Serve Frontend
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'test') {
     // Set build folder as static
     app.use(express.static(path.join(__dirname, '../frontend/build')))
   
