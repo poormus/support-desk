@@ -24,11 +24,11 @@ app.use('/api/tickets',require('./routes/TicketRoutes'))
 // Serve Frontend
 if (process.env.NODE_ENV === 'development') {
     // Set build folder as static
-    app.use(express.static(path.join(__dirname, '../frontend/build')))
+    app.use(express.static(path.join(__dirname, '../frontend/public')))
   
     // FIX: below code fixes app crashing on refresh in deployment
     app.get('*', (_, res) => {
-      res.sendFile(path.join(__dirname, '../frontend/build/index.html'))
+      res.sendFile(path.join(__dirname, '../frontend/public/index.html'))
     })
   } else {
     app.get('/', (req, res) => {
